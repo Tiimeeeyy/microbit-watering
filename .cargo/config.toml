@@ -1,0 +1,6 @@
+# CORRECTED: The target name here now exactly matches the one below.
+[target.thumbv7em-none-eabihf]
+runner = "probe-rs run --chip nRF52833_xxAA"
+
+[build]
+target = "thumbv7em-none-eabihf"
