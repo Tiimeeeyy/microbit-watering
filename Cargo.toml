@@ -8,14 +8,11 @@ version = "0.1.0"
 [dependencies]
 cortex-m = { version = "0.7.6", features = ["critical-section-single-core"] }
 cortex-m-rt = "0.7"
-cortex-m-semihosting = "0.5"
-panic-halt = "1.0.0"
-embedded-hal = "1.0.0"
-microbit-v2 = {version = "0.13.0"}
+embedded-hal = "0.2.7" # This is the critical change
+microbit-v2 = "0.13.0"
 panic-rtt-target = { version = "0.1.2", features = ["cortex-m"] }
-
-defmt-rtt = "1.0.0"
 rtt-target = "0.6.1"
+
 # this lets you use `cargo fix`!
 [[bin]]
 name = "moisture-monitor"
